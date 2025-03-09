@@ -1,5 +1,10 @@
 
 def main():
-    print("Hello World", flush=True)
+    # Open a file in write mode
+    with open('output.txt', 'w') as file:
+        file.write('Hello, world!')
+
+    print("String written to file successfully.")
+
 
 main()
